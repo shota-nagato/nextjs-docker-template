@@ -1,0 +1,11 @@
+services:
+  next:
+    build:
+      dockerfile: ./next/Dockerfile.dev
+    command: 'npm run dev'
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./next:/app
+    ports:
+      - "8000:3000"
