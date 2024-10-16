@@ -17,9 +17,6 @@ export const api = async (url: string, options: ApiOptions = {}) => {
 
   const accessToken = 'ACCESS_TOKEN'
 
-  console.log('aaaaa')
-  console.log(data)
-
   try {
     const response = await axiosInstance.request({
       data,
